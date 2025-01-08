@@ -1,7 +1,9 @@
-export function salvarNoStorage(lista) {
-  localStorage.setItem("listaDeCompras", JSON.stringify(lista));
-}
+// storage.js
+export const salvarItens = (itens) => {
+  localStorage.setItem('itens', JSON.stringify(itens));
+};
 
-export function carregarDoStorage() {
-  return JSON.parse(localStorage.getItem("listaDeCompras")) || [];
-}
+export const carregarItens = () => {
+  const itens = localStorage.getItem('itens');
+  return itens ? JSON.parse(itens) : [];
+};
