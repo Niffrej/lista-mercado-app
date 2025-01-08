@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <h1>Lista de Compras</h1>
+  
+  <!-- Formulário de Adicionar Item -->
+  <input type="text" id="item" placeholder="Nome do Produto">
+  <input type="number" id="quantidade" value="1">
+  <input type="number" id="preco" step="0.01" placeholder="Preço">
+  <button id="adicionar">Adicionar</button>
+
+  <!-- Lista de Itens -->
+  <table id="lista-itens">
+    <thead>
+      <tr>
+        <th>Comprar</th>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+        <th>Total</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Itens serão carregados aqui -->
+    </tbody>
+  </table>
+
+  <!-- Exibição do Total -->
+  <div id="total-geral">Total: R$ 0.00</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+
+</body>
+</html>
